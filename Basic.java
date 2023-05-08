@@ -70,25 +70,48 @@ class Basic {
         //Take random number of 5 digit and print the 2nd even number
         
         // System.out.println((int)(Math.random() * 1000));  // 0 - 999 
-        int num = (int)(Math.random() * 100000);    // 0 - 99999
-        System.out.println(num);
+        // int num = (int)(Math.random() * 100000);    // 0 - 99999
+        // System.out.println(num);
 
-        int count = 0;
+        // int count = 0;
         // for(initialization; condition; increment/decrement) {
         //     // code
         // }
 
-        while(num > 0) {
-            int rem = num % 10;
-            if(rem % 2 == 0) {
-                System.out.println("count++: " + rem);
+        // while(num > 0) {
+        //     int rem = num % 10;
+        //     if(rem % 2 == 0) {
+        //         System.out.println("count++: " + rem);
+        //         count++;
+        //         if(count == 2) {    // 2nd even number
+        //             System.out.println("answer: " + rem);
+        //             break;
+        //         }
+        //     }
+        //     num = num / 10;
+        // }
+
+        // Answer
+
+        int num = ((int)(Math.random()*100000));
+
+        System.out.println(num);
+        String numStr = "" + num;
+        int count = 0;
+        
+        // System.out.println(numStr.charAt(2));
+        for(int i=0; i<numStr.length(); i++) {
+            int c = (int)numStr.charAt(i);
+            if(c % 2 == 0) {
                 count++;
+                if(count == 2) {
+                    System.out.println("2nd even number: " + (char)c);
+                    break;
+                }
             }
-            if(count == 2) {    // 2nd even number
-                System.out.println("answer: " + rem);
-                break;
-            }
-            num = num / 10;
+        }
+        if(count < 2) {
+            System.out.println("No 2nd even number");
         }
     }
 }
