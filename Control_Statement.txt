@@ -1,0 +1,39 @@
+1. Grade Classifier: Write a program that takes a student's score as input and determines their grade based on a grading scale. Use if-else statements to classify the score into different grade categories (e.g., A, B, C, D, F).
+
+2. Leap Year Checker: Create a program that checks if a given year is a leap year or not. Use if-else statements to determine the conditions for a leap year (e.g., divisible by 4 but not divisible by 100 unless divisible by 400).
+
+3. Fibonacci Series: Generate and print the Fibonacci series up to a given number 'n'. Use loops (for or while) to calculate the series.
+
+4. Prime Number Checker: Write a program that checks if a given number is prime or not. Use loops and if-else statements to determine if the number is divisible by any other number.
+
+5. Factorial Calculator: Develop a program that calculates the factorial of a given number. Use loops to multiply the numbers from 1 to the given number.
+
+6. Palindrome Checker: Implement a program that checks if a given string is a palindrome (reads the same forwards and backwards). Use loops and if-else statements to compare the characters.
+
+7. Maximum Number Finder: Write a program that finds the maximum number from a given list of integers. Use if-else statements and loops to compare the numbers and keep track of the maximum.
+
+8. Vowel Counter: Create a program that counts the number of vowels in a given string. Use loops and if-else statements to iterate through each character and check if it is a vowel.
+
+9. Number Guessing Game: Develop a program that generates a random number and allows the user to guess it. Use if-else statements and loops to provide hints and check if the guessed number matches the generated number.
+
+10. Calculator: Implement a simple calculator program that performs basic arithmetic operations (addition, subtraction, multiplication, division). Use switch case statements to perform the selected operation based on user input.
+
+
+11. Password Strength Checker: Implement a program that checks the strength of a user's password based on certain criteria (e.g., minimum length, presence of uppercase letters, lowercase letters, digits, and special characters). Use if-else statements to determine the strength level.
+
+12. Number Pattern Generator: Write a program that generates different number patterns, such as the following:
+
+```
+1
+1 2
+1 2 3
+1 2 3 4
+```
+
+Use nested loops and if-else statements to print the desired pattern based on the number of rows.
+
+13. File Size Converter: Create a program that converts file sizes from bytes to kilobytes, megabytes, gigabytes, etc. Use if-else statements and appropriate conversion factors to determine the appropriate unit of measurement.
+
+14. Rock-Paper-Scissors Game: Develop a game where a user can play against the computer in the classic rock-paper-scissors game. Use if-else statements and random number generation to determine the winner based on the selected choices.
+
+15. Number Palindrome Checker: Write a program that checks if a given number is a palindrome. Use loops, if-else statements, and mathematical operations to reverse the number and compare it with the original number.

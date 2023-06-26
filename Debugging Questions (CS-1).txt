@@ -1,0 +1,143 @@
+Here are 10 sample code snippets with hidden errors. Students will need to find and fix the errors:
+
+Question 1:
+
+public class SampleCode1 {
+    public static void main(String[] args) {
+        int x = 5;
+        int y = 10;
+        int sum = x + y;
+        System.out.println("The sum of x and y is: " + sum);
+    }
+}
+
+Identify and fix the error in the above code.
+
+Question 2:
+
+public class SampleCode2 {
+    public static void main(String[] args) {
+        String message = "Hello, World!";
+        for (int i = 0; i <= message.length(); i++) {
+            System.out.print(message.charAt(i) + " ");
+        }
+    }
+}
+
+Identify and fix the error in the above code.
+
+Question 3:
+
+public class SampleCode3 {
+    public static void main(String[] args) {
+        int num = 10;
+        while (num > 0) {
+            System.out.println(num);
+            num++;
+        }
+    }
+}
+
+Identify and fix the error in the above code.
+
+Question 4:
+
+public class SampleCode4 {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5};
+        for (int i = 0; i <= numbers.length; i++) {
+            System.out.print(numbers[i] + " ");
+        }
+    }
+}
+
+Identify and fix the error in the above code.
+
+Question 5:
+
+public class SampleCode5 {
+    public static void main(String[] args) {
+        int i = 0;
+        do {
+            System.out.print(i + " ");
+            i--;
+        } while (i > 0);
+    }
+}
+
+Identify and fix the error in the above code.
+
+Question 6:
+
+public class SampleCode6 {
+    public static void main(String[] args) {
+        int x = 5;
+        if (x = 5) {
+            System.out.println("x is equal to 5");
+        } else {
+            System.out.println("x is not equal to 5");
+        }
+    }
+}
+
+Identify and fix the error in the above code.
+
+Question 7:
+
+public class SampleCode7 {
+    public static void main(String[] args) {
+        int i = 0;
+        while (i < 5) {
+            System.out.println(i);
+            i++;
+        }
+    }
+}
+
+Identify and fix the error in the above code.
+
+Question 8:
+
+public class SampleCode8 {
+    public static void main(String[] args) {
+        int x = 10;
+        if (x > 5) {
+            System.out.println("x is greater than 5");
+        } else {
+            System.out.println("x is less than or equal to 5");
+        }
+    }
+}
+
+Identify and fix the error in the above code.
+
+Question 9:
+
+public class SampleCode9 {
+    public static void main(String[] args) {
+        int x = 5;
+        int y = 0;
+        int result = x / y;
+        System.out.println("The result is: " + result);
+    }
+}
+
+Identify and fix the error in the above code.
+
+Question 10:
+
+public class SampleCode10 {
+    public static void main(String[] args) {
+        int num = 10;
+        for (int i = num; i >= 0; i--) {
+            System.out.println(i
+
+);
+            num--;
+        }
+    }
+}
+
+Identify and fix the error in the above code.
+
+Note: Each question may have one or more errors that need to be fixed.

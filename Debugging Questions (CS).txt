@@ -1,0 +1,363 @@
+Debugging Questions - Basics and Control Statements in Java
+
+Instructions:
+1. Read each question carefully and identify the error or bug in the given code.
+2. Write the correct code or fix the error in the given space provided.
+
+1. What will be the output of the following code?
+
+public class DebugTest {
+    public static void main(String[] args) {
+        int x = 5;
+        int y = 2;
+        int result = x / y;
+        System.out.println("Result: " + result);
+    }
+}
+
+a) Result: 2.5
+b) Result: 2
+c) Result: 3
+d) Compilation error
+
+2. Identify the error in the following code:
+
+public class DebugTest {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 5; i++) {
+            System.out.print(i);
+        }
+    }
+}
+
+a) No error
+b) Missing curly braces for the loop
+c) Missing semicolon after the print statement
+d) Missing the "int" keyword for the variable declaration
+
+3. What will be the output of the following code?
+
+public class DebugTest {
+    public static void main(String[] args) {
+        int num = 10;
+        while (num > 0) {
+            System.out.println(num);
+            num--;
+        }
+    }
+}
+
+a) 10 9 8 7 6 5 4 3 2 1
+b) 1 2 3 4 5 6 7 8 9 10
+c) 1
+d) Compilation error
+
+4. Identify the error in the following code:
+
+public class DebugTest {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5};
+        for (int i = 0; i <= numbers.length; i++) {
+            System.out.print(numbers[i] + " ");
+        }
+    }
+}
+
+a) No error
+b) Missing curly braces for the loop
+c) Array index out of bounds
+d) Missing semicolon after the print statement
+
+5. What will be the output of the following code?
+
+public class DebugTest {
+    public static void main(String[] args) {
+        int i = 0;
+        do {
+            System.out.print(i + " ");
+            i++;
+        } while (i < 5);
+    }
+}
+
+a) 0 1 2 3 4
+b) 1 2 3 4 5
+c) 5 4 3 2 1
+d) Compilation error
+
+6. Identify the error in the following code:
+
+public class DebugTest {
+    public static void main(String[] args) {
+        int x = 5;
+        if (x = 5) {
+            System.out.println("x is equal to 5");
+        } else {
+            System.out.println("x is not equal to 5");
+        }
+    }
+}
+
+a) No error
+b) Missing semicolon after the assignment statement
+c) Missing comparison operator in the if condition
+d) Incorrect use of assignment operator in the if condition
+
+7. What will be the output of the following code?
+
+public class DebugTest {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 5; i++) {
+            if (i == 3) {
+                continue;
+            }
+            System.out.print(i + " ");
+        }
+    }
+}
+
+a) 1 2 3 4 5
+b) 1 2 4 5
+c) 3
+d) Compilation error
+
+8. Identify the error in the following code:
+
+public class DebugTest {
+    public static void main(String[] args) {
+        int i = 1;
+        while (i <= 10)
+            System.out.print(i + " ");
+            i++;
+    }
+}
+
+a) No error
+b) Missing semicolon after the while loop condition
+c) Missing curly braces for the while loop
+d) Missing semicolon after the print statement
+
+9. What will be the output of the following code?
+
+public class DebugTest {
+    public static void main(String[] args) {
+        int num = 5;
+        switch (num) {
+            case 1:
+                System.out.println("One");
+                break;
+            case 2:
+                System.out.println("Two");
+                break;
+            default:
+                System.out.println("Other");
+        }
+    }
+}
+
+a) One
+b) Two
+c) Other
+d) Compilation error
+
+10. Identify the error in the following code:
+
+public class DebugTest {
+    public static void main(String[] args) {
+        int x = 5;
+        int y = 2;
+        int result = x % y;
+        System.out.println("Result: " + result);
+    }
+}
+
+a) No error
+b) Missing semicolon after the print statement
+c) Incorrect operator used for modulus calculation
+d) Missing the "int" keyword for the variable declaration
+
+11. What will be the output of the following code?
+
+public class DebugTest {
+    public static void main(String[] args) {
+        int i = 0;
+        while (i < 5) {
+            System.out.print(i + " ");
+            i += 2;
+        }
+    }
+}
+
+a) 0 1 2 3 4
+b) 0 2 4
+c) 2 4 6 8 10
+d) Compilation error
+
+12. Identify the error in the following code:
+
+public class DebugTest {
+    public static void main(String[] args) {
+        int x = 5;
+        if (x > 0) {
+            System.out.println("x is positive");
+        } else if (x < 0) {
+            System.out.println("x is negative");
+        } else {
+            System.out.println("x is zero");
+        }
+    }
+}
+
+a) No error
+b) Missing semicolon after the print statement
+c) Incorrect condition in the else-if statement
+d) Missing curly braces for the if-else statement
+
+13. What will be the output of the following code?
+
+
+public class DebugTest {
+    public static void main(String[] args) {
+        int x = 10;
+        while (x > 0) {
+            System.out.println(x);
+            x -= 3;
+        }
+    }
+}
+
+a) 10 7 4 1
+b) 1 4 7 10
+c) 1
+d) Compilation error
+
+14. Identify the error in the following code:
+
+public class DebugTest {
+    public static void main(String[] args) {
+        int i = 1;
+        do {
+            System.out.print(i + " ");
+            i--;
+        } while (i > 0);
+    }
+}
+
+a) No error
+b) Missing semicolon after the print statement
+c) Incorrect decrement operator used in the do-while loop
+d) Missing curly braces for the do-while loop
+
+15. What will be the output of the following code?
+
+public class DebugTest {
+    public static void main(String[] args) {
+        int x = 1;
+        switch (x) {
+            case 1:
+                System.out.println("One");
+            case 2:
+                System.out.println("Two");
+            default:
+                System.out.println("Default");
+        }
+    }
+}
+
+a) One
+   Two
+   Default
+b) One
+   Two
+c) One
+d) Compilation error
+
+16. Identify the error in the following code:
+
+public class DebugTest {
+    public static void main(String[] args) {
+        int x = 5;
+        int y = 2;
+        int result = x * y;
+        System.out.println("Result: " + result);
+    }
+}
+
+a) No error
+b) Missing semicolon after the print statement
+c) Incorrect operator used for multiplication
+d) Missing the "int" keyword for the variable declaration
+
+17. What will be the output of the following code?
+
+public class DebugTest {
+    public static void main(String[] args) {
+        int i = 0;
+        while (i < 5) {
+            System.out.print(i + " ");
+            i++;
+        }
+    }
+}
+
+a) 0 1 2 3 4
+b) 1 2 3 4 5
+c) 5 4 3 2 1
+d) Compilation error
+
+18. Identify the error in the following code:
+
+public class DebugTest {
+    public static void main(String[] args) {
+        int x = 5;
+        if (x == 5) {
+            System.out.println("x is equal to 5");
+        } else {
+            System.out.println("x is not equal to 5");
+        }
+    }
+}
+
+a) No error
+b) Missing semicolon after the print statement
+c) Incorrect operator used for equality check
+d) Missing the "int" keyword for the variable declaration
+
+19. What will be the output of the following code?
+
+public class DebugTest {
+    public static void main(String[] args) {
+        int x = 10;
+        while (x > 0) {
+            System.out.println(x);
+            x /= 2;
+        }
+    }
+}
+
+a) 10 5 2
+b) 2 5 10
+c) 2 4 6 8 10
+d) Compilation error
+
+20. Identify the error in the following code:
+
+public class DebugTest {
+    public static void main(String[] args) {
+        int x = 5;
+        if (x < 0) {
+            System.out.println("x is negative");
+        } else if (x > 0) {
+            System.out.println("x is positive");
+        } else {
+            System.out.println("x is zero");
+        }
+    }
+}
+
+a) No error
+b) Missing semicolon after the print statement
+c) Incorrect condition in the else-if statement
+d) Missing curly braces for the if-else statement
+
+That concludes the question paper. I hope you find it helpful for practicing debugging in Java!
