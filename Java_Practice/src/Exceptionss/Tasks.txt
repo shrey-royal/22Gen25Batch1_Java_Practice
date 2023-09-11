@@ -1,0 +1,212 @@
+Basic:
+
+1. Write a Java program that throws an exception and catch it using a try-catch block.
+2. Write a Java program to create a method that takes an integer as a parameter and throws an exception if the number is odd.
+3. Write a Java program that reads a list of integers from the user and throws an exception if any numbers are duplicates.
+4. Write a Java program to create a method that takes a string as input and throws an exception if the string does not contain vowels.
+
+
+--------------------------------------------------------
+
+Real world scenarios:
+
+1. Online Shopping Cart: Develop a program for an online shopping cart that handles exceptions like "Out of Stock" when a user tries to purchase an item that is no longer available.
+
+2. Bank Account Management: Create a banking application that manages exceptions such as "Insufficient Funds" when a user attempts to withdraw more money than they have in their account.
+
+3. Flight Booking System: Design a flight booking system that catches exceptions like "Seat Already Reserved" when a passenger tries to book a seat that is already taken.
+
+5. Weather Data Processing: Develop a weather data processing application that deals with exceptions like "Invalid Data Format" when processing weather data files with incorrect formats.
+
+6. Medical Records System: Create a medical records system that handles exceptions such as "Patient Not Found" when searching for patient records that do not exist.
+
+7. Library Catalog System: Build a library catalog system that catches exceptions like "Book Not Available" when a user tries to borrow a book that is already checked out.
+
+8. Inventory Management: Develop an inventory management system for a retail store that deals with exceptions like "Item Not in Stock" when trying to sell products that are out of stock.
+
+9. Social Media Post Scheduler: Design a social media post scheduling tool that manages exceptions like "Invalid Date" or "Character Limit Exceeded" when scheduling posts.
+
+10. Ride-Sharing App: Create a ride-sharing application that handles exceptions like "Driver Not Available" when a user requests a ride in an area with no available drivers.
+
+
+Test cases:
+
+Certainly, here are sample test cases for all 10 scenarios with input and expected output for each program:
+
+### Test Cases for Online Shopping Cart:
+
+#### Test Case 1: Purchasing an Available Item
+Input:
+- Product: Laptop (available in stock)
+- Quantity: 1
+- User: John
+
+Expected Output:
+- Confirmation message: "Thank you, John! Your purchase of 1 Laptop is successful."
+
+#### Test Case 2: Purchasing an Out-of-Stock Item
+Input:
+- Product: Smartphone (out of stock)
+- Quantity: 2
+- User: Jane
+
+Expected Output:
+- Exception message: "Sorry, Jane. The Smartphone is currently out of stock."
+
+### Test Cases for Bank Account Management:
+
+#### Test Case 1: Withdrawing Sufficient Funds
+Input:
+- Account Balance: $1000
+- Withdraw Amount: $300
+
+Expected Output:
+- New Account Balance: $700
+
+#### Test Case 2: Attempting to Overdraw
+Input:
+- Account Balance: $500
+- Withdraw Amount: $800
+
+Expected Output:
+- Exception message: "Insufficient funds. Your account balance is $500, but you requested to withdraw $800. Please enter a valid amount."
+
+### Test Cases for Flight Booking System:
+
+#### Test Case 1: Booking an Available Seat
+Input:
+- Flight: ABC123
+- Seat Number: 4A
+- Passenger: Alice
+
+Expected Output:
+- Confirmation message: "Congratulations, Alice! Your seat 4A on flight ABC123 has been successfully booked."
+
+#### Test Case 2: Booking an Already Reserved Seat
+Input:
+- Flight: XYZ456
+- Seat Number: 2B
+- Passenger: Bob
+
+Expected Output:
+- Exception message: "Sorry, Bob. Seat 2B on flight XYZ456 is already reserved."
+
+### Test Cases for File Management:
+
+#### Test Case 1: Reading an Existing File
+Input:
+- File Path: "sample.txt"
+
+Expected Output:
+- Content of "sample.txt" file
+
+#### Test Case 2: Reading a Nonexistent File
+Input:
+- File Path: "nonexistent.txt"
+
+Expected Output:
+- Exception message: "File 'nonexistent.txt' not found."
+
+### Test Cases for Weather Data Processing:
+
+#### Test Case 1: Processing Valid Data File
+Input:
+- Data File: "weather_data.csv"
+
+Expected Output:
+- Successful processing of weather data.
+
+#### Test Case 2: Processing Invalid Data File
+Input:
+- Data File: "invalid_data.txt"
+
+Expected Output:
+- Exception message: "Invalid data format in file 'invalid_data.txt'."
+
+### Test Cases for Medical Records System:
+
+#### Test Case 1: Retrieving Existing Patient Record
+Input:
+- Patient ID: 12345
+
+Expected Output:
+- Medical record of patient with ID 12345
+
+#### Test Case 2: Retrieving Nonexistent Patient Record
+Input:
+- Patient ID: 67890
+
+Expected Output:
+- Exception message: "Patient with ID 67890 not found."
+
+### Test Cases for Library Catalog System:
+
+#### Test Case 1: Borrowing an Available Book
+Input:
+- Book Title: "Harry Potter and the Sorcerer's Stone"
+- User: Emily
+
+Expected Output:
+- Confirmation message: "Congratulations, Emily! You have successfully borrowed 'Harry Potter and the Sorcerer's Stone'."
+
+#### Test Case 2: Borrowing an Already Checked Out Book
+Input:
+- Book Title: "The Catcher in the Rye"
+- User: David
+
+Expected Output:
+- Exception message: "Sorry, David. 'The Catcher in the Rye' is already checked out."
+
+### Test Cases for Inventory Management:
+
+#### Test Case 1: Selling an In-Stock Item
+Input:
+- Product: Smartphone
+- Quantity: 3
+
+Expected Output:
+- Successful sale of 3 Smartphones.
+
+#### Test Case 2: Selling an Out-of-Stock Item
+Input:
+- Product: Tablet
+- Quantity: 1
+
+Expected Output:
+- Exception message: "Item 'Tablet' is not in stock."
+
+### Test Cases for Social Media Post Scheduler:
+
+#### Test Case 1: Scheduling a Valid Post
+Input:
+- Post Content: "Exciting news! Our new product is launching tomorrow."
+- Scheduled Date and Time: 2023-09-15, 10:00 AM
+
+Expected Output:
+- Confirmation message: "Your post has been scheduled for 2023-09-15 at 10:00 AM."
+
+#### Test Case 2: Scheduling a Post with Excessive Characters
+Input:
+- Post Content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit..." (more than 280 characters)
+- Scheduled Date and Time: 2023-09-20, 3:30 PM
+
+Expected Output:
+- Exception message: "Character limit exceeded. Please keep your post within 280 characters."
+
+### Test Cases for Ride-Sharing App:
+
+#### Test Case 1: Requesting a Ride with Available Drivers
+Input:
+- Pickup Location: Downtown
+- Destination: Airport
+
+Expected Output:
+- Confirmation message: "A driver is en route to pick you up at Downtown."
+
+#### Test Case 2: Requesting a Ride in an Area with No Available Drivers
+Input:
+- Pickup Location: Suburb
+- Destination: Mall
+
+Expected Output:
+- Exception message: "Sorry, there are currently no available drivers in the Suburb area."
