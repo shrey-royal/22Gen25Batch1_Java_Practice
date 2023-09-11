@@ -91,22 +91,6 @@ Input:
 Expected Output:
 - Exception message: "Sorry, Bob. Seat 2B on flight XYZ456 is already reserved."
 
-### Test Cases for File Management:
-
-#### Test Case 1: Reading an Existing File
-Input:
-- File Path: "sample.txt"
-
-Expected Output:
-- Content of "sample.txt" file
-
-#### Test Case 2: Reading a Nonexistent File
-Input:
-- File Path: "nonexistent.txt"
-
-Expected Output:
-- Exception message: "File 'nonexistent.txt' not found."
-
 ### Test Cases for Weather Data Processing:
 
 #### Test Case 1: Processing Valid Data File
