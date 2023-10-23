@@ -39,18 +39,88 @@ public class SocialMediaAnalytics {
 
                 case 2:
                     //Display most popular posts based on total interactions
-                    List<Post> popularPosts = getPopularPosts(posts);
+                    List<Post> popularPosts = getMostPopularPosts(posts);
                     System.out.println("Most Popular Posts:");
                     for (Post p : popularPosts) {
                         System.out.println(p.getTitle() + " - " + p.getTotalInteractions() + " interactions");
                     }
                     break;
-            
+
+                case 3:
+                    //Identify users with highest engagement
+                    Map<String, Integer> userEngagement = identifyTopUsers(posts);
+                    System.out.println("Top Users with highest engagement:");
+                    for(String user : userEngagement.keySet()) {
+                        System.out.println(user + " - " + userEngagement.get(user) + " interactions");
+                    }
+                    break;
+
+                case 4:
+                    // Analyze trending hashtags
+                    Map<String, Integer> hashtagCounts = analyzeTrendingHashTags(trendingHashtags);
+                    System.out.println("Trending Hashtags:");
+                    for(String hashtag : hashtagCounts.keySet()) {
+                        System.out.println(hashtag + " - " + hashtagCounts.get(hashtag) + " mentions");
+                    }
+                    break;
+
+                case 5:
+                    //Perform Sentiment analysis on comments
+                    //psuedo code
+                    System.out.println("Enter a comment: ");
+                    String comment = sc.nextLine();
+                    String sentiment = performSentimentAnalysis(comment);
+                    System.out.println("Sentiment analysis result: " + sentiment);
+                    break;
+
+                case 6:
+                    System.out.println("Exiting the Program.");
+                    sc.close();
+                    System.exit(0);
+
                 default:
                     break;
             }
         }
     }
+
+    //Helper methods for analytics
+
+    private static List<Post> getMostPopularPosts(Map<String, Post> posts) {
+        List<Post> postList = new ArrayList<>(posts.values());
+        postList.sort((post1, post2) -> post2.getTotalInteractions() - post1.getTotalInteractions());
+        return postList;
+    }
+
+    private static Map<String, Integer> identifyTopUsers(Map<String, Post> posts) {
+        Map<String, Integer> userEngagement = new HashMap<>();
+        for(Post post : posts.values()) {
+            String user = post.getUser();
+            int interactions = post.getTotalInteractions();
+            userEngagement.put(user, userEngagement.getOrDefault(user, 0) + interactions);
+        }
+        return userEngagement;
+    }
+
+    private static Map<String, Integer> analyzeTrendingHashTags(List<String> hashtags) {
+        Map<String, Integer> hashtagCounts = new HashMap<>();
+        for(String hashtag : hashtags) {
+            hashtagCounts.put(hashtag, hashtagCounts.getOrDefault(hashtag, 0) + 1);
+        }
+        return hashtagCounts;
+    }
+
+    //psuedo code.
+    private static String performSentimentAnalysis(String comment) {
+        if(comment.toLowerCase().contains("happy") || comment.toLowerCase().contains("good")) {
+            return "Positive";
+        } else if (comment.toLowerCase().contains("bad") || comment.toLowerCase().contains("sad")) {
+            return "Negative";
+        } else {
+            return "Neutral";
+        }
+    }
+
 }
 
 
